@@ -37,13 +37,16 @@
             this.txtFarenheit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblCelsius
             // 
             this.lblCelsius.AutoSize = true;
+            this.lblCelsius.BackColor = System.Drawing.Color.MistyRose;
             this.lblCelsius.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelsius.Location = new System.Drawing.Point(289, 95);
+            this.lblCelsius.Location = new System.Drawing.Point(310, 150);
             this.lblCelsius.Name = "lblCelsius";
             this.lblCelsius.Size = new System.Drawing.Size(71, 25);
             this.lblCelsius.TabIndex = 0;
@@ -52,8 +55,9 @@
             // lblFarenheit
             // 
             this.lblFarenheit.AutoSize = true;
+            this.lblFarenheit.BackColor = System.Drawing.Color.MistyRose;
             this.lblFarenheit.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFarenheit.Location = new System.Drawing.Point(273, 148);
+            this.lblFarenheit.Location = new System.Drawing.Point(294, 203);
             this.lblFarenheit.Name = "lblFarenheit";
             this.lblFarenheit.Size = new System.Drawing.Size(87, 25);
             this.lblFarenheit.TabIndex = 1;
@@ -62,8 +66,9 @@
             // lblKelvin
             // 
             this.lblKelvin.AutoSize = true;
+            this.lblKelvin.BackColor = System.Drawing.Color.MistyRose;
             this.lblKelvin.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKelvin.Location = new System.Drawing.Point(300, 193);
+            this.lblKelvin.Location = new System.Drawing.Point(321, 248);
             this.lblKelvin.Name = "lblKelvin";
             this.lblKelvin.Size = new System.Drawing.Size(60, 25);
             this.lblKelvin.TabIndex = 2;
@@ -72,7 +77,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(132, 241);
+            this.btnCalcular.Location = new System.Drawing.Point(153, 296);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(240, 41);
             this.btnCalcular.TabIndex = 3;
@@ -82,21 +87,21 @@
             // 
             // txtCelsius
             // 
-            this.txtCelsius.Location = new System.Drawing.Point(366, 95);
+            this.txtCelsius.Location = new System.Drawing.Point(387, 150);
             this.txtCelsius.Name = "txtCelsius";
             this.txtCelsius.Size = new System.Drawing.Size(100, 20);
             this.txtCelsius.TabIndex = 4;
             // 
             // txtKelvin
             // 
-            this.txtKelvin.Location = new System.Drawing.Point(366, 193);
+            this.txtKelvin.Location = new System.Drawing.Point(387, 248);
             this.txtKelvin.Name = "txtKelvin";
             this.txtKelvin.Size = new System.Drawing.Size(100, 20);
             this.txtKelvin.TabIndex = 5;
             // 
             // txtFarenheit
             // 
-            this.txtFarenheit.Location = new System.Drawing.Point(366, 148);
+            this.txtFarenheit.Location = new System.Drawing.Point(387, 203);
             this.txtFarenheit.Name = "txtFarenheit";
             this.txtFarenheit.Size = new System.Drawing.Size(100, 20);
             this.txtFarenheit.TabIndex = 6;
@@ -104,8 +109,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(308, 37);
+            this.label4.Location = new System.Drawing.Point(329, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 28);
             this.label4.TabIndex = 7;
@@ -114,12 +120,29 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(406, 241);
+            this.btnLimpiar.Location = new System.Drawing.Point(427, 296);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(240, 41);
             this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.Text = "Limpiar el sistema";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(801, 138);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MistyRose;
+            this.panel2.Location = new System.Drawing.Point(1, 140);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 311);
+            this.panel2.TabIndex = 10;
             // 
             // Form1
             // 
@@ -135,6 +158,8 @@
             this.Controls.Add(this.lblKelvin);
             this.Controls.Add(this.lblFarenheit);
             this.Controls.Add(this.lblCelsius);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -153,6 +178,8 @@
         private System.Windows.Forms.TextBox txtFarenheit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
