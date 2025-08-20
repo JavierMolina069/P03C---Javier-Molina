@@ -16,5 +16,10 @@ namespace P03___Javier_Molina
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ingrese valores para el cálculo de temperatura");
+        }
     }
 }
